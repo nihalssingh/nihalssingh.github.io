@@ -19,21 +19,20 @@
   <!-- Primary Meta Tags -->
   <title>Nihal Singh</title>
   <meta name="title" content="Nihal Singh - My Splash Page">
-  <meta name="Author" content="Nihal Singh">
+  <meta name="author" content="Nihal Singh">
   <meta name="description" content="Ph.D. Student, Computer Engineering, UC Santa Barbara">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Nihal Singh - My Splash Page">
-  <meta property="og:image" content="https://nihalssingh.github.io/img/bg_Tohoku_Talk.jpg">
-  <meta property="og:description" content="➤ Ph.D. Student">
+  <meta property="og:image" content="https://nihalssingh.github.io/img/bg_Tohoku_Talk-min.jpg">
+  <meta property="og:description" content="Ph.D. Student, researching probabilistic computing at UC Santa Barbara.">
   <meta property="og:url" content="https://nihalssingh.github.io/">
   <meta property="og:type" content="website">
-  <meta name="image" property="og:image" content="https://nihalssingh.github.io/img/bg_Tohoku_Talk.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:title" content="Nihal Singh - My Splash Page">
-  <meta property="twitter:image" content="https://nihalssingh.github.io/img/bg_Tohoku_Talk.jpg">
-  <meta property="twitter:description" content="➤ Ph.D. Student">
+  <meta property="twitter:image" content="https://nihalssingh.github.io/img/bg_Tohoku_Talk-min.jpg">
+  <meta property="twitter:description" content="Ph.D. Student, researching probabilistic computing at UC Santa Barbara.">
   <meta property="twitter:url" content="https://nihalssingh.github.io/">
   <meta property="twitter:card" content="summary_large_image">
 
@@ -58,9 +57,9 @@
   </a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">TOP OF THE MORNING</a>
-      </li>
+      <!-- <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">CONTENTS</a>
+      </li> -->
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
@@ -68,7 +67,7 @@
         <a class="js-scroll-trigger" href="#about">About</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#resume">Resume</a> <!-- Added Resume Link -->
+        <a class="js-scroll-trigger" href="#resume">Resume</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#services">Skills</a>
@@ -83,14 +82,24 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container" style="position: absolute; top: 50%; left: 8%; transform: translateY(-50%); max-width: 600px;">
-      <h1 class="mb-1 text-dark">Nihal Singh</h1>
-      <h3 class="mb-3 text-dark">Ph.D. Student, Computer Engineering (ECE) <br> UC Santa Barbara (UCSB)</h3>
-      <a class="btn btn-xl btn-light js-scroll-trigger" href="#about">Find Out More</a>
+  <header class="masthead d-flex" style="height: 100vh; background: url('img/bg_Tohoku_Talk-min.jpg') no-repeat center center; background-size: cover; position: relative;">
+    <!-- Container for Headshot and Text -->
+    <div class="container d-flex align-items-center" style="position: absolute; top: 50%; left: 8%; transform: translateY(-50%); max-width: 800px; background: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 10px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);">
+      <!-- Headshot Section -->
+      <div class="headshot" style="flex: 1; text-align: center;">
+        <img src="img/headshot.jpg" alt="Nihal Singh Headshot" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); margin-right: 20px;">
+      </div>
+      <!-- Text Section -->
+      <div class="text-section" style="flex: 2;">
+        <h1 class="mb-1 text-dark" style="font-size: 2.5rem;">Nihal Singh</h1>
+        <h3 class="mb-3 text-dark" style="font-size: 1.2rem;">Ph.D. Student, Computer Engineering (ECE) <br> UC Santa Barbara (UCSB)</h3>
+        <a class="btn btn-xl btn-primary js-scroll-trigger" href="#about" style="padding: 15px 30px; border-radius: 30px;">Find Out More</a>
+      </div>
     </div>
     <div class="overlay"></div>
   </header>
+
+
 
   <!-- About Section -->
   <section class="content-section bg-light" id="about" style="padding: 80px 20px; background: url('img/light-pattern.png') no-repeat center center; background-size: cover;">
