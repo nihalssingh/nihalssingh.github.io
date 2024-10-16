@@ -68,6 +68,9 @@
         <a class="js-scroll-trigger" href="#about">About</a>
       </li>
       <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#resume">Resume</a> <!-- Added Resume Link -->
+      </li>
+      <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#services">Skills</a>
       </li>
       <li class="sidebar-nav-item">
@@ -81,7 +84,7 @@
 
   <!-- Header -->
   <header class="masthead d-flex">
-    <div class="container">
+    <div class="container" style="position: absolute; top: 50%; left: 8%; transform: translateY(-50%); max-width: 600px;">
       <h1 class="mb-1 text-dark">Nihal Singh</h1>
       <h3 class="mb-3 text-dark">Ph.D. Student, Computer Engineering (ECE) <br> UC Santa Barbara (UCSB)</h3>
       <a class="btn btn-xl btn-light js-scroll-trigger" href="#about">Find Out More</a>
@@ -89,27 +92,74 @@
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
+  <!-- About Section -->
+  <section class="content-section bg-light" id="about" style="padding: 80px 20px; background: url('img/light-pattern.png') no-repeat center center; background-size: cover;">
+    <div class="container text-center" style="max-width: 1000px; background: #ffffffcc; padding: 50px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2 class="mb-5">About me</h2>
-          <p class="lead mb-5 text-left">
-            I am pursuing my Ph.D. in Electrical and Computer Engineering at UC Santa Barbara (UCSB). <br><br> I spend my research time developing <i>full-stack</i> probabilistic computing systems by doing the following: <br>&#8226 Take challenging optimization and machine learning problems, <br>&#8226 Find ways to map and implement them using a probabilistic computer, <br>&#8226 Translate these algorithms and applications down to scalable platforms combining emerging devices with CMOS.<br><br>
-            <b>Education:</b> M.S., Electrical and Computer Engineering, UC Santa Barbara (UCSB), <br> B.E. (Hons.), Electrical and Electronics Engineering, Birla Institue of Technology and Science, Pilani, India<br><br>
-            <!-- ✍️ ☛ <br><br> 
-
-            ---<br><br>
-
-            • A passion for <br>
-            • Highly ambitious.<br> -->
+          <h2 class="mb-5" style="font-size: 2.5rem; color: #333;">
+            <i class="fas fa-user" style="color: #007bff; margin-right: 10px;"></i>About Me
+          </h2>
+          <p class="lead mb-5 text-left" style="font-size: 1.2rem; line-height: 1.7;">
+            I am pursuing my <b>Ph.D.</b> in Electrical and Computer Engineering at UC Santa Barbara (UCSB). 
+            <br><br> 
+            I spend my research time developing <i style="color: #007bff;">full-stack</i> probabilistic computing systems by doing the following:
           </p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Offer</a>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <i class="fas fa-brain fa-2x" style="color: #007bff; margin-bottom: 15px;"></i>
+                  <p class="card-text">Take challenging optimization and machine learning problems.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <i class="fas fa-code-branch fa-2x" style="color: #007bff; margin-bottom: 15px;"></i>
+                  <p class="card-text">Find ways to map and implement them using a probabilistic computer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <i class="fas fa-microchip fa-2x" style="color: #007bff; margin-bottom: 15px;"></i>
+                  <p class="card-text">Translate these algorithms down to scalable platforms combining emerging devices with CMOS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="mt-5" style="font-size: 1.8rem; color: #333;">
+            <i class="fas fa-graduation-cap" style="color: #007bff; margin-right: 10px;"></i>Education
+          </h3>
+          <p class="lead text-left" style="font-size: 1.2rem; line-height: 1.7;">
+            <b>M.S.</b>, Electrical and Computer Engineering, UC Santa Barbara (UCSB) <br> 
+            <b>B.E. (Hons.)</b>, Electrical and Electronics Engineering, Birla Institute of Technology and Science, Pilani, India
+          </p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger mt-4" href="#services" style="padding: 15px 30px; border-radius: 30px;">What I Offer</a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section" style="padding: 80px 20px; background: linear-gradient(to right, #f0f8ff, #e6e6fa);">
+    <div class="container" style="max-width: 800px; background: #fff; border-radius: 15px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); padding: 40px;">
+      <h2 class="section-title" style="font-size: 2.5rem; text-align: center; margin-bottom: 20px; color: #333;">
+        <i class="fas fa-file-alt" style="margin-right: 10px; color: #007bff;"></i>Resume
+      </h2>
+      <p style="font-size: 1.2rem; text-align: center; margin-bottom: 30px;">You can download my latest resume from the link below:</p>
+      <div style="text-align: center;">
+        <a href="docs/Nihal_Singh_CV.pdf" class="btn btn-primary btn-lg" target="_blank" style="background-color: #007bff; border: none; padding: 15px 30px; border-radius: 30px; transition: all 0.3s;">
+          <i class="fas fa-download" style="margin-right: 10px;"></i>Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
@@ -186,69 +236,66 @@
     </div>
   </section>
 
-<!-- Portfolio -->
-<section class="content-section" id="portfolio">
-  <div class="container">
-    <div class="content-section-heading text-center">
-      <h3 class="text-secondary mb-0">My Publications</h3>
-      <h2 class="mb-5">Recently published papers and patents</h2>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <a class="portfolio-item" href="https://www.nature.com/articles/s41467-024-46645-6">
-          <span class="caption" style="background-color: rgba(0, 0, 0, 0.35);">
-            <span class="caption-content" style="background-color: rgba(0, 0, 0, 0.35);">
-              <h2>Nature Communications, 2024</h2>
-              <p class="mb-0">CMOS plus stochastic nanomagnets enabling heterogeneous computers for probabilistic inference and learning</p>
-            </span>
-          </span>
-          <div class="aspect-ratio-box">
-            <img class="img-fluid" src="img/article-1.png" alt="">
-          </div>
-        </a>
+  <!-- Portfolio Section -->
+  <section class="content-section" id="portfolio" style="padding: 80px 20px; background: #f9f9f9;">
+    <div class="container">
+      <div class="content-section-heading text-center mb-5">
+        <h3 class="text-secondary mb-0" style="color: #007bff;">My Publications</h3>
+        <h2 class="mb-5" style="font-size: 2.5rem;">Recently Published Papers and Patents</h2>
       </div>
-      <div class="col-lg-6">
-        <a class="portfolio-item" href="https://ieeexplore.ieee.org/abstract/document/10413686/">
-          <span class="caption" style="background-color: rgba(0, 0, 0, 0.35);">
-            <span class="caption-content" style="background-color: rgba(0, 0, 0, 0.35);">
-              <h2>IEEE IEDM, 2023</h2>
-              <p class="mb-0">Hardware Demonstration of Feedforward Stochastic Neural Networks with Fast MTJ-based p-bits</p>
-            </span>
-          </span>
-          <div class="aspect-ratio-box">
-            <img class="img-fluid" src="img/IEDM23.JPG" alt="">
+      <div class="row">
+        <!-- Publication 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+            <a href="https://www.nature.com/articles/s41467-024-46645-6" target="_blank">
+              <img class="card-img-top" src="img/article-1.png" alt="Nature Communications, 2024" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body">
+                <h4 class="card-title" style="font-size: 1.5rem; color: #333;">Nature Communications, 2024</h4>
+                <p class="card-text text-muted">CMOS plus stochastic nanomagnets enabling heterogeneous computers for probabilistic inference and learning</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="col-lg-6">
-        <a class="portfolio-item" href="https://arxiv.org/abs/2404.19345">
-          <span class="caption" style="background-color: rgba(0, 0, 0, 0.35);">
-            <span class="caption-content" style="background-color: rgba(0, 0, 0, 0.35);">
-              <h2>npj Spintronics [In Review], 2024</h2>
-              <p class="mb-0">Connecting physics to systems with modular spin-circuits</p>
-            </span>
-          </span>
-          <div class="aspect-ratio-box">
-            <img class="img-fluid" src="img/npj.JPG" alt="">
+        </div>
+        <!-- Publication 2 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10413686/" target="_blank">
+              <img class="card-img-top" src="img/IEDM23.JPG" alt="IEEE IEDM, 2023" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body">
+                <h4 class="card-title" style="font-size: 1.5rem; color: #333;">IEEE IEDM, 2023</h4>
+                <p class="card-text text-muted">Hardware Demonstration of Feedforward Stochastic Neural Networks with Fast MTJ-based p-bits</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="col-lg-6">
-        <a class="portfolio-item" href="https://ieeexplore.ieee.org/document/9455152">
-          <span class="caption" style="background-color: rgba(0, 0, 0, 0.35);">
-            <span class="caption-content" style="background-color: rgba(0, 0, 0, 0.35);">
-              <h2>IEEE Radar Conference, 2021</h2>
-              <p class="mb-0">Parallelized instantaneous velocity and heading estimation of objects using single imaging radar</p>
-            </span>
-          </span>
-          <div class="aspect-ratio-box">
-            <img class="img-fluid" src="img/article-4.jpg" alt="">
+        </div>
+        <!-- Publication 3 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+            <a href="https://arxiv.org/abs/2404.19345" target="_blank">
+              <img class="card-img-top" src="img/npj.JPG" alt="npj Spintronics [In Review], 2024" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body">
+                <h4 class="card-title" style="font-size: 1.5rem; color: #333;">npj Spintronics [In Press], 2024</h4>
+                <p class="card-text text-muted">Connecting physics to systems with modular spin-circuits</p>
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
+        <!-- Publication 4 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card border-0 shadow h-100" style="border-radius: 15px;">
+            <a href="https://ieeexplore.ieee.org/document/9455152" target="_blank">
+              <img class="card-img-top" src="img/article-4.jpg" alt="IEEE Radar Conference, 2021" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <div class="card-body">
+                <h4 class="card-title" style="font-size: 1.5rem; color: #333;">IEEE Radar Conference, 2021</h4>
+                <p class="card-text text-muted">Parallelized instantaneous velocity and heading estimation of objects using single imaging radar</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 
 
 
