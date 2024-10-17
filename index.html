@@ -2,7 +2,21 @@
 <html lang="en">
 
 <head>
-
+  <!-- Add this within the <head> tag -->
+    <style>
+      @media (max-width: 768px) {
+        .masthead {
+          background-position: 50% 50% !important;
+        }
+      }
+  
+      @media (max-width: 576px) {
+        .masthead {
+          background-position: 57% 100% !important;
+          background-size: auto 100%;
+        }
+      }
+    </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157138662-1"></script>
   <script>
@@ -312,10 +326,13 @@
   <section id="contact" class="content-section bg-primary text-white">
     <div class="container text-center mb-4">
       <h2 class="mb-4">To Follow my Research and Reach Out for Collaborations</h2>
-      <a href="https://scholar.google.com/citations?user=GbMagcoAAAAJ" class="btn btn-xl btn-light mb-3 mr-3" style="margin-bottom: 15px;">Google Scholar <i class="fas fa-user-graduate"></i></a>
-      <a href="mailto:nihal.s.singh@gmail.com" class="btn btn-xl btn-light mb-3 ml-3" style="margin-bottom: 15px;">Personal Email ID <i class="fas fa-envelope"></i></a>
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <a href="https://scholar.google.com/citations?user=GbMagcoAAAAJ" class="btn btn-xl btn-light mb-3" style="margin-bottom: 15px;">Google Scholar <i class="fas fa-user-graduate"></i></a>
+        <a href="mailto:nihal.s.singh@gmail.com" class="btn btn-xl btn-light mb-3" style="margin-bottom: 15px;">Personal Email ID <i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </section>
+
 
 
 <!-- Map -->
