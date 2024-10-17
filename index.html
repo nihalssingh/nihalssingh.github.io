@@ -3,20 +3,54 @@
 
 <head>
   <!-- Add this within the <head> tag -->
-    <style>
-      @media (max-width: 768px) {
-        .masthead {
-          background-position: 50% 50% !important;
-        }
-      }
+  <style>
+    .masthead {
+      height: 100vh;
+      background: url('img/bg_Tohoku_Talk-min.JPG') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
   
-      @media (max-width: 576px) {
-        .masthead {
-          background-position: 57% 100% !important;
-          background-size: auto 100%;
-        }
+    /* General container styling for the white text box */
+    .container.centered-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 800px;
+      width: 90%; /* Set width to cover more of the mobile screen */
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    @media (max-width: 768px) {
+      .masthead {
+        background-position: 50% 50% !important; /* Adjust to show a specific part of the image on tablet sizes */
+        background-size: cover; /* Keeps image covering the section */
       }
-    </style>
+      
+      .container.centered-box {
+        width: 95%; /* Adjust the width for tablet sizes to occupy more space */
+        padding: 20px; /* Slightly reduce padding to make space for content */
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .masthead {
+        background-position: 60% 50% !important; /* Adjust to focus on specific parts of the image for mobile */
+        background-size: cover; /* Ensure it covers the screen */
+      }
+      
+      .container.centered-box {
+        width: 95%; /* Ensure it uses most of the screen width */
+        padding: 15px; /* Adjust padding to fit small screens */
+      }
+    }
+  </style>
+    
+    
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157138662-1"></script>
   <script>
@@ -98,7 +132,7 @@
   <!-- Header -->
   <header class="masthead d-flex" style="height: 100vh; background: url('img/bg_Tohoku_Talk-min.JPG') no-repeat center center; background-size: cover; position: relative;">
     <!-- Container for Headshot and Text -->
-    <div class="container d-flex align-items-center" style="position: absolute; top: 50%; left: 8%; transform: translateY(-50%); max-width: 800px; background: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 10px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);">
+    <div class="container d-flex align-items-center centered-box">
       <!-- Headshot Section -->
       <div class="headshot" style="flex: 1; text-align: center;">
         <img src="img/headshot.jpg" alt="Nihal Singh Headshot" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); margin-right: 20px;">
@@ -112,6 +146,7 @@
     </div>
     <div class="overlay"></div>
   </header>
+
 
 
 
